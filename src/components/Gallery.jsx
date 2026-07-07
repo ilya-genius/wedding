@@ -16,11 +16,11 @@ import "swiper/css/pagination";
 
 
 const photos = [
-  "/images/photo1.webp",
-  "/images/photo2.webp",
-  "/images/photo3.webp",
-  "/images/photo4.webp",
-  "/images/photo5.webp",
+  `${import.meta.env.BASE_URL}images/photo1.webp`,
+  `${import.meta.env.BASE_URL}images/photo2.webp`,
+  `${import.meta.env.BASE_URL}images/photo3.webp`,
+  `${import.meta.env.BASE_URL}images/photo4.webp`,
+  `${import.meta.env.BASE_URL}images/photo5.webp`,
 ];
 
 

@@ -119,7 +119,7 @@ function Location() {
 
             <img
 
-              src="/images/location.webp"
+              src={`${import.meta.env.BASE_URL}images/location.webp`}
 
               alt="Место проведения"
 
