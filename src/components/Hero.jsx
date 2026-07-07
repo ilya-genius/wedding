@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[100svh] overflow-hidden">
 
       {/* Фон */}
       <div
@@ -31,7 +31,7 @@ function Hero() {
           relative
           z-10
           flex
-          min-h-screen
+          min-h-[100svh]
           flex-col
           items-center
           justify-center
@@ -85,24 +85,6 @@ function Hero() {
         >
           14 ноября 2026
         </motion.p>
-
-
-        <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{
-            duration:1,
-            delay:1.5
-          }}
-          className="
-            absolute
-            bottom-10
-            animate-bounce
-            text-3xl
-          "
-        >
-          ↓
-        </motion.div>
 
 
       </div>
