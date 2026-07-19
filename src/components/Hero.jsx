@@ -18,8 +18,8 @@ function Hero() {
       {/* Затемнение */}
       <div 
         className="
-          absolute 
-          inset-0 
+          absolute
+          inset-0
           bg-black/40
         "
       />
@@ -34,10 +34,13 @@ function Hero() {
           min-h-[100svh]
           flex-col
           items-center
-          justify-center
+          justify-start
+          md:justify-center
           text-white
           text-center
           px-6
+          pt-24
+          md:pt-0
         "
       >
 
@@ -45,7 +48,14 @@ function Hero() {
           initial={{opacity:0, y:20}}
           animate={{opacity:1, y:0}}
           transition={{duration:1}}
-          className="text-lg tracking-[0.4em] uppercase mb-8"
+          className="
+            text-sm
+            md:text-lg
+            tracking-[0.4em]
+            uppercase
+            mb-6
+            md:mb-8
+          "
         >
           Приглашение на свадьбу
         </motion.p>
@@ -57,16 +67,14 @@ function Hero() {
           transition={{duration:1.2}}
           className="
             wedding-title
-            text-7xl
-            md:text-9xl
+            text-5xl
+            md:text-7xl
+            lg:text-8xl
             font-light
+            whitespace-nowrap
           "
         >
-          Юлия
-          <br/>
-          &
-          <br/>
-          Илья
+          Юлия & Илья
         </motion.h1>
 
 
@@ -78,8 +86,10 @@ function Hero() {
             delay:0.8
           }}
           className="
-            mt-10
-            text-xl
+            mt-6
+            md:mt-10
+            text-lg
+            md:text-xl
             tracking-widest
           "
         >

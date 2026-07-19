@@ -143,7 +143,7 @@ function Invitation() {
 
 
         <a
-          href="#"
+          href="https://forms.gle/vntGZDBRwn2WCspUA"
           className="
             inline-block
             mt-12

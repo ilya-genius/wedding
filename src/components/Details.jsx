@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Gift, Flower2, Phone, Wine } from "lucide-react";
+import { Gift, Flower2, Shirt } from "lucide-react";
+import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
 
 
 const details = [
@@ -11,15 +12,15 @@ const details = [
   },
   {
     icon: Flower2,
-    title: "Цветы",
+    title: "Цветы и пожелания",
     text:
-      "Мы будем очень рады вашему вниманию, но просим по возможности отказаться от цветов. К сожалению, они недолго смогут радовать нас после праздника. Если вы всё же захотите подарить цветы — мы будем благодарны."
+      "Мы понимаем, что дарить цветы на свадьбу — это добрая традиция, но, к сожалению, они не смогут долго радовать нас после праздника. Будем рады любой другой альтернативе — например, любимому напитку для нашего праздничного вечера или другому знаку внимания на ваше усмотрение."
   },
   {
-    icon: Wine,
-    title: "Пожелания",
+    icon: Shirt,
+    title: "Дресс-код",
     text:
-      "Если вы захотите сделать приятный сюрприз — вместо цветов будем рады хорошему настроению и вашим любимым напиткам для праздничного вечера."
+      "Будем рады видеть вас в элегантных праздничных образах. Главное — чтобы вам было комфортно и настроение соответствовало этому особому дню."
   }
 ];
 
@@ -42,7 +43,6 @@ function Details() {
           mx-auto
         "
       >
-
 
         <motion.div
 
@@ -225,7 +225,7 @@ function Details() {
             flex-col
             md:flex-row
             justify-between
-            items-center
+            items-start
             gap-8
           "
 
@@ -252,8 +252,18 @@ function Details() {
                 mt-4
               "
             >
-              Свадебный организатор
+              Виктория
             </h3>
+
+
+            <p
+              className="
+                mt-2
+                text-gray-300
+              "
+            >
+              Свадебный организатор
+            </p>
 
 
             <p
@@ -262,8 +272,6 @@ function Details() {
                 text-gray-300
               "
             >
-              Виктория
-              <br/>
               +375 29 190 09 20
             </p>
 
@@ -273,30 +281,55 @@ function Details() {
 
 
 
-          <a
-
-            href="tel:+375291900920"
-
+          <div
             className="
               flex
-              items-center
-              gap-3
-              bg-white
-              text-black
-              px-8
-              py-4
-              rounded-full
-              transition
-              hover:scale-105
+              gap-4
             "
-
           >
 
-            <Phone size={20}/>
+            <a
+              href="https://t.me/weddingvictory"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                flex
+                items-center
+                justify-center
+                w-14
+                h-14
+                rounded-full
+                bg-white
+                text-black
+                transition
+                hover:scale-105
+              "
+            >
+              <FaTelegramPlane size={22}/>
+            </a>
 
-            Связаться
 
-          </a>
+            <a
+              href="https://www.instagram.com/victoriya_velimovich?igsh=azVjZmIydml3bGVu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                flex
+                items-center
+                justify-center
+                w-14
+                h-14
+                rounded-full
+                bg-white
+                text-black
+                transition
+                hover:scale-105
+              "
+            >
+              <FaInstagram size={22}/>
+            </a>
+
+          </div>
 
 
         </motion.div>

@@ -21,6 +21,12 @@ const photos = [
   `${import.meta.env.BASE_URL}images/photo3.webp`,
   `${import.meta.env.BASE_URL}images/photo4.webp`,
   `${import.meta.env.BASE_URL}images/photo5.webp`,
+  `${import.meta.env.BASE_URL}images/photo6.webp`,
+  `${import.meta.env.BASE_URL}images/photo7.webp`,
+  `${import.meta.env.BASE_URL}images/photo8.webp`,
+  `${import.meta.env.BASE_URL}images/photo9.webp`,
+  `${import.meta.env.BASE_URL}images/photo10.webp`,
+  `${import.meta.env.BASE_URL}images/photo11.webp`,
 ];
 
 

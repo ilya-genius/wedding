@@ -86,8 +86,7 @@ function RSVP() {
 
 
           <a
-
-            href="#"
+            href="https://forms.gle/vntGZDBRwn2WCspUA"
             className="
               inline-flex
               items-center
@@ -101,11 +100,8 @@ function RSVP() {
               transition
               hover:scale-105
             "
-
           >
-
             Подтвердить участие
-
           </a>
 
 
@@ -119,17 +115,20 @@ function RSVP() {
 
       {/* Финальный экран */}
 
-
       <section
 
         className="
           relative
-          min-h-screen
+          min-h-[100svh]
           flex
+          flex-col
           items-center
-          justify-center
+          justify-start
+          md:justify-center
           overflow-hidden
           text-white
+          pt-24
+          md:pt-0
         "
 
       >
@@ -203,8 +202,9 @@ function RSVP() {
 
             className="
               wedding-title
-              text-6xl
-              md:text-8xl
+              text-5xl
+              md:text-7xl
+              lg:text-8xl
               font-light
             "
 
@@ -221,28 +221,16 @@ function RSVP() {
           <p
 
             className="
-              mt-10
-              text-xl
+              mt-6
+              md:mt-10
+              text-lg
+              md:text-xl
               tracking-widest
             "
 
           >
 
             14 ноября 2026 г.
-
-          </p>
-
-
-          <p
-
-            className="
-              mt-8
-              text-gray-300
-            "
-
-          >
-
-            Юлия & Илья
 
           </p>
 
